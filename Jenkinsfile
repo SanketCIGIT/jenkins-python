@@ -19,14 +19,14 @@ pipeline {
                         """
                         }
                 }
-    }
+   	 }
 		post {
                 success {
                         echo 'Build complete'
-                }
+                	}
                 failure {
                         echo 'Build failed'
-                }
-        }
+               		 }
+       		}	
 
 }
