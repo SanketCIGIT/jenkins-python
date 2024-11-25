@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+	environment {
+		DOCKER_IMAGE = 'hello-python:latest'
+	}
     stages {
         	stage('checkout') {
 	    	steps {
